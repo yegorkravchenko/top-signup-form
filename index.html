@@ -5,37 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up Form</title>
-    <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
     <main>
       <div class="wrapper">
-        <div class="left">
-          <h1 class="title">Join us!</h1>
-          <p class="copyright">
-            Image by
-            <a href="https://unsplash.com/@chengfengrecord">cheng feng</a> on
-            <a href="https://unsplash.com/">Unsplash</a>
-          </p>
+        <div id="left" class="content-block">
+          <div class="picture">
+            <p class="copyright">
+              Image by
+              <a href="https://unsplash.com/@athlon">Aditya Visave</a> on
+              <a href="https://unsplash.com/">Unsplash</a>
+            </p>
+          </div>
         </div>
 
-        <div class="right">
+        <div id="right" class="content-block">
+          <div class="text-box">
+            <h1>Join us!</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+              vitae. Culpa minus inventore aperiam iste omnis beatae itaque
+              minima nulla accusamus id impedit debitis commodi, ratione
+              laudantium repellendus! Voluptas error alias voluptates aspernatur
+              laborum harum!
+            </p>
+            <p>You know you want it!</p>
+          </div>
           <form action="">
-            <label for="full-name">Full name</label>
-            <input id="full-name" type="text" name="name" />
-
-            <label for="email">Email</label>
-            <input id="email" type="email" name="email" />
-
-            <label for="phone">Phone number</label>
-            <input id="phone" type="phone" name="phone" />
-
-            <label for="pass">Password</label>
-            <input id="pass" type="password" name="pass" />
-
-            <label for="pass">Confirm password</label>
-            <input id="pass" type="password" name="pass" />
+            <div class="wrapper">
+              <label for="full-name">Full name</label>
+              <input id="full-name" type="text" name="name" />
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email" />
+              <label for="phone">Phone number (optional)</label>
+              <input id="phone" type="phone" name="phone" />
+              <label for="pass">Password</label>
+              <input id="pass" type="password" name="pass" />
+              <label for="confirm-pass">Confirm password</label>
+              <input id="confirm-pass" type="password" name="pass" />
+            </div>
 
             <button type="submit">Create account</button>
           </form>
