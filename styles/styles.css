@@ -41,7 +41,7 @@ main > .wrapper {
 
 .picture {
   height: 100%;
-  background-image: url('../assets/bg-img.jpg');
+  background-image: url("../assets/bg-img.jpg");
   border-radius: 10px;
   position: relative;
 }
@@ -96,6 +96,12 @@ input {
 
 label {
   color: var(--slate-900);
+  margin-bottom: 5px;
+}
+
+.input-description {
+  color: var(--slate-600);
+  font-size: 0.8rem;
   margin-bottom: 5px;
 }
 

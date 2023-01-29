@@ -36,15 +36,49 @@
           <form action="">
             <div class="wrapper">
               <label for="full-name">Full name</label>
-              <input id="full-name" type="text" name="name" />
+              <input
+                id="full-name"
+                type="text"
+                name="name"
+                autocomplete="name"
+                required
+              />
               <label for="email">Email</label>
-              <input id="email" type="email" name="email" />
+              <input
+                id="email"
+                type="email"
+                name="email"
+                autocomplete="email"
+                required
+              />
               <label for="phone">Phone number (optional)</label>
-              <input id="phone" type="phone" name="phone" />
+              <input id="phone" type="phone" name="phone" autocomplete="tel" />
               <label for="pass">Password</label>
-              <input id="pass" type="password" name="pass" />
+              <p id="pass-description" class="input-description">
+                The password must contain at least eight characters, one letter
+                and one number.
+              </p>
+              <input
+                id="pass"
+                type="password"
+                name="pass"
+                autocomplete="new-password"
+                aria-describedby="pass-description"
+                minlength="8"
+                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                required
+              />
               <label for="confirm-pass">Confirm password</label>
-              <input id="confirm-pass" type="password" name="pass" />
+              <input
+                id="confirm-pass"
+                type="password"
+                name="pass"
+                autocomplete="new-password"
+                aria-describedby="pass-description"
+                minlength="8"
+                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                required
+              />
             </div>
 
             <button type="submit">Create account</button>
